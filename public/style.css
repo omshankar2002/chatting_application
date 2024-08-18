@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f8f8f8;
+    font-family: 'Roboto', sans-serif;
+}
+
+section.chat_section {
+    width: 800px;
+    max-width: 90%;
+    background: #fff;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    height: 600px; /* Increased height */
+}
+
+.brand {
+    padding: 20px;
+    background: rgb(29, 28, 28);
+    display: flex;
+    align-items: center;
+}
+
+.brand img {
+    height: 40px;
+    border-radius: 15px;
+}
+
+.brand h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-left: 10px;
+    color: white;
+}
+
+.message_area {
+    flex: 1; /* Allow this area to grow */
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    background-color: black;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+   
+    background:  rgb(39, 36, 36);
+    color: white;
+}
+
+.message {
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    max-width: 60%;
+    position: relative;
+}
+
+.incoming {
+    background-color: rgb(39, 36, 36);
+    color: whitesmoke;
+    align-self: flex-start;
+    margin-left: 0;
+}
+
+.outgoing {
+    background-color: green;
+    color: whitesmoke;
+    align-self: flex-end;
+    margin-right: 0;
+}
+
+.message h4 {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: whitesmoke;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.message p {
+    margin: 0;
+}
